@@ -12,27 +12,19 @@ class WriteStoryImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          "Let us write a new story...",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+        SizedBox(
+          width: 300.0,
         ),
-        SizedBox(height: defaultPadding),
-        Text(
-          "(Longpress the spacebar to speak and fill text)",
-          style: TextStyle(fontSize: 14),
+        const Text(
+          "Write your story",
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 35,
+              color: Colors.purple,
+              backgroundColor: Color.fromARGB(255, 243, 222, 243)),
         ),
-        SizedBox(height: defaultPadding * 2),
-        // Row(
-        //   children: [
-        //     const Spacer(),
-        //     Expanded(
-        //       flex: 8,
-        //       child: SvgPicture.asset("assets/icons/logo.svg"),
-        //     ),
-        //     const Spacer(),
-        //   ],
-        // ),
-        //SizedBox(height: defaultPadding * 2),
+        const SizedBox(height: defaultPadding),
+        const SizedBox(height: defaultPadding * 2),
       ],
     );
   }

@@ -15,6 +15,7 @@ class ReadStory extends StatelessWidget {
           child: Responsive(
             desktop: Row(
               mainAxisAlignment: MainAxisAlignment.end,
+              // ignore: prefer_const_literals_to_create_immutables
               children: [
                 const Expanded(
                   child: WelcomeImage(),
@@ -38,8 +39,8 @@ class MobileWelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        const WelcomeImage(),
+      children: const <Widget>[
+        WelcomeImage(),
       ],
     );
   }

@@ -21,7 +21,7 @@ class WriteStoryForm extends StatelessWidget {
             cursorColor: kPrimaryColor,
             onSaved: (email) {},
             decoration: InputDecoration(
-              hintText: "Enter the title of your story",
+              hintText: "Enter a title of your story",
               prefixIcon: Padding(
                 padding: const EdgeInsets.all(defaultPadding),
                 child: Icon(Icons.text_fields),

@@ -14,6 +14,7 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Column(
+      
         children: [
           TextFormField(
             keyboardType: TextInputType.emailAddress,
@@ -21,7 +22,8 @@ class LoginForm extends StatelessWidget {
             cursorColor: kPrimaryColor,
             onSaved: (email) {},
             decoration: InputDecoration(
-              hintText: "Your email",
+              fillColor:Colors.white,
+              hintText: "Username",
               prefixIcon: Padding(
                 padding: const EdgeInsets.all(defaultPadding),
                 child: Icon(Icons.person),
@@ -35,7 +37,8 @@ class LoginForm extends StatelessWidget {
               obscureText: true,
               cursorColor: kPrimaryColor,
               decoration: InputDecoration(
-                hintText: "Your password",
+                fillColor:Colors.white,
+                hintText: "Password",
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(defaultPadding),
                   child: Icon(Icons.lock),
@@ -58,7 +61,7 @@ class LoginForm extends StatelessWidget {
                 );
               },
               child: Text(
-                "Login".toUpperCase(),
+                "GO".toUpperCase(),
               ),
             ),
           ),

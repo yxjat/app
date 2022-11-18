@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/responsive.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../components/background.dart';
 import 'components/login_form.dart';
@@ -18,6 +19,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               const Expanded(
                 child: LoginScreenTopImage(),
+                
               ),
               Expanded(
                 child: Row(
@@ -29,6 +31,11 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              Expanded(
+                child: SvgPicture.asset(
+                "assets/images/welcome_text.svg",
+              ),
               ),
             ],
           ),

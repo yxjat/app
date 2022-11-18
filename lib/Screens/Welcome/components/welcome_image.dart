@@ -17,7 +17,7 @@ class WelcomeImage extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: defaultPadding/2),
+        SizedBox(height: defaultPadding*2),
         Row(
           children: [
             Spacer(),
@@ -27,23 +27,10 @@ class WelcomeImage extends StatelessWidget {
                 "assets/images/welcome_text.svg",
               ),
             ),
-            Spacer(),
           ],
         ),
         SizedBox(height: defaultPadding * 2),
-        Row(
-          children: [
-            Spacer(),
-            Expanded(
-              flex: 8,
-              child: SvgPicture.asset(
-                "assets/images/try_this_final_svg.svg",
-              ),
-            ),
-            Spacer(),
-          ],
-        ),
-        SizedBox(height: defaultPadding * 2),
+
       ],
     );
   }
